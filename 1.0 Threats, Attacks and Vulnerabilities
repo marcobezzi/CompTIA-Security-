@@ -6,3 +6,66 @@
 • For malware to take effect in your computer, it is usually in an email link. Sometimes, the file is downloaded to your computer when you visit a page. 
 
 # Viruses and Worms
+
+• A computer virus is a malware that can reproduce itself. It reproduces through file systems or the network. 
+• Some viruses are invisible, some are very visible. Use anti-virus software on your computers.  
+• Some viruses are part of an application, others are part of the boot section. Some viruses run as scripts (in the browser).  
+• Viruses can delete files, cause random reboots, join a botnet, enable backdoors, etc. A user can execute viruses unknowingly. 
+• A worm is a type of virus that can self-replicate within systems without assistance from host applications or user interactions. They use the network as a transmission medium. They take over systems very quickly.  
+• Next-gen firewalls and IDS/IPS systems can mitigate worm infestations. Worms consume network bandwidth. 
+
+# Ransomware and Crypto-malware. 
+• The most important things we have in our computer systems are data (personal or organizational data).  
+• Ransomware is a situation where your computer is unusable because an attacker encrypts data on your computer and requires you to pay to retrieve. 
+• Crypto-malware is ransomware that encrypts all data in the computer except the operating system (so that it can present a message to you). 
+• Always have a backup for your files. Always update your applications.  
+ 
+ 
+# Trojans and RATs.  
+• A trojan horse is a software that pretends to be something else in an effort to entice you into run on your computer. The better trojans are built to avoid and disable anti viruses. Trojan horses can open doors for other malware.  
+• Some software include backdoors as part of the app.  
+• Another popular trojan method is rogueware (aka scareware). When a user visits a site, a message pops up indicating the presence of malware on the user's system. The user downloads and installs the free anti-virus software which is actually a trojan. 
+• Many web browser extensions include malicious trojans.  
+• One category of trojan is a Remote Access Trojan (RAT). They allow attackers to gain unprecedented access to the computer from remote locations. They may setup a keylogger (know everything you type in the keyboard), screen recording, screenshots, embedded files.  
+• To prevent trojans, don't run unknown software on your computer. Make sure that your anti-virus is constantly updated. Also always have a backup. 
+ 
+ 
+# Rootkits.  
+• In Windows, the highest user is the administrator. In UNIX/Linux, it is the root user.  
+• A Rootkit modifies the kernel of the operating system. From there, it can avoid a lot of anti viruses from detecting it. Rootkits often modify system files such as the registry. They can also modify system access (admin). 
+• Rootkits are often combined with other applications to create malware.  
+• If your anti-virus and anti-malware are updated with the latest signatures, it might be possible to detect rootkits.  
+ 
+ 
+# Keyloggers.  
+• Keyboards are the primary login methods into the computers. Keyloggers save all the key strokes and send it to bad guys.  
+• Keyloggers can also store clipboard information, logins, screenshots, etc.  
+• Keyloggers are usually installed as a piece of well known malware, so update your anti-virus and anti-malware. Also run a key-logging scanner.  
+ 
+ 
+# Adware and Spyware.  
+• Adware is software that is free but includes ads. The software shows advertisements and has an option to purchase a version without ads.  
+• The computer is a very big advertisement site with tons of pop-ups. It may cause performance issues. Sometimes adware is installed accidentally.  
+• One challenge in removing adware is knowing who to trust in trying to remove it, some tools present themselves as anti ad-ware but are more adware.  
+• Spyware is malware that spies on you and steals your information for identity theft or something else. It is installed without the user's awareness. 
+• Spyware captures your browsing habits, keyloggers, etc.  
+• Similarly, make sure that you have the latest signatures for your anti-malware and anti-viruses. Have solid backups. Know what you're installing. Scan. 
+ 
+ 
+# Bots and Botnets.  
+• Bots are software robots.  
+• Botnets are Robot networks, meaning that there are virtual robots in your computer. Your computer becomes a member of a botnet network. Bots in a botnet are often called zombies. Bot herders manage botnets.  
+• They get into the computer through trojan horses, application vulnerability, operating system, etc. The user is unaware of the activity. 
+• Once the botnet is in, it waits for commands from the mothership.  
+• One well known botnet is the ZeuS botnet which took money from bank accounts.  
+• This is also used in a DDoS (Distributed Denial of Service) attack.  
+ 
+ 
+# Logic Bombs. 
+• These are malware that wait for a specific event to occur before taking action. It is usually a user event or a time based event.  
+• It is very difficult to identify because it won't appear on anti-virus scans.  
+• One way to stop a logic bomb is implementing process and procedure systems. Also, electronic monitoring (alert on changes, host based intrusion detection). Constant auditing is another recommended method.  
+ 
+ 
+# Backdoors. 
+• A backdoor provides another way of accessing a system to bypass normal authentication methods. 
