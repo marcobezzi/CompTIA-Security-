@@ -69,3 +69,21 @@
  
 # Backdoors. 
 • A backdoor provides another way of accessing a system to bypass normal authentication methods. 
+
+Protecting Systems from Malware. 
+• Spam Filter on mail gateways.  
+• Anti-malware software on mail gateways.  
+• Use firewalls to filter out unwanted traffic. For example, Unified Threat Management (UTM) inspects traffic and reduces malware risk.  
+• Install antiviruses and anti-malware software to detect, block and remove viruses, trojans, worms, rootkits, spyware, adware, etc. 
+• Heuristic based detection attempts to detect viruses that were previously unknown and do not have signatures. This includes zero-day exploits.  
+• Check file integrity. File integrity checkers calculate hashes on system files and periodically recalculates these hashes to detect changes. If the hashes are different, alerts can be sent to detect rootkit infections.  
+• Data Execution Prevention (DEP) is a security feature that prevents code from executing in memory regions marked as nonexecutable. It prevents an application from executing a code from a nonexecutable memory region. This is to protect systems from malware.  
+• Cisco's Advanced Malware Protection (AMP) combines multiple technologies to protect a network before, during and after an attack.  
+• Untrained users are one of the largest vulnerabilities. Train and raise the security awareness of users.  
+• Don't click on links with emails from unknown sources.  
+• Don't open attachments from unknown sources.  
+• Be wary of free downloads from the internet.  
+• Limit information you post on social media sites (information can be used to answer password reset questions). 
+• Backup your data regularly.  
+• Keep your computer up to date with regular patches and keep antivirus software up to date.  
+
