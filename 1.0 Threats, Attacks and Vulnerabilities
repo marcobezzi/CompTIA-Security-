@@ -87,3 +87,222 @@ Protecting Systems from Malware. 
 • Backup your data regularly.  
 • Keep your computer up to date with regular patches and keep antivirus software up to date.  
 
+
+## 1.2     TYPES OF ATTACKS. 
+ 
+Phishing. 
+• Phishing is a technique used to convince users to provide information. It is the practice of sending email to users with the purpose of tricking them into revealing personal information or clicking on a link. It is a mixture of social engineering and spoofing.  
+• Check URLs, spellings, fonts, graphics. Don't click links inside of emails.  
+• A type of phishing is vishing, which is phishing done over the phone.  
+• Spear phishing is phishing to target a specific group of people. Targeting highly placed people in companies is called whaling. Use Digital Signatures. 
+• A spam is an unwanted or unsolicited email. It can include malicious links and attachments.  
+• Vishing attacks use phone systems to trick users into giving up personal and financial information. It uses VoIP technology and spoofing.  
+ 
+ 
+Tailgating & Impersonation. 
+• Tailgating is a technique where someone uses someone else to gain access to a building. Blending in to buildings with someone else. 
+• Train staff into what policies are acceptable. Require people to wear badges at all time. Also, badges should be for one person at a time. Use mantraps.  
+• Impersonation is pretending to be someone you aren't. Never volunteer information, don't disclose personal details, always verify before revealing info.  
+ 
+ 
+Dumpster Diving. 
+• Someone doing dumpster diving goes into the trash can to look for important information. It could be phone numbers, customer information, etc. In the United States for the most part, dumpster diving is legal.  
+• Secure your garbage in a fence and lock, shred your documents and burn the important stuff. Also look at your trash and see what's in there.  
+ 
+ 
+Shoulder Surfing.  
+• Many people want to have access to information and shoulder surfing is the easiest tech hack possible. In airports, coffee shops, hallway facing monitors, etc. Also with binoculars, webcams, telescopes, etc.  
+• Shoulder surfing is easy to control: be aware of your surroundings, use privacy filters for laptops and phones, be careful during flights, keep monitors out of sight.  
+ 
+ 
+Hoaxes.  
+• Hoaxes are threats that don't actually exist but seem to be real.  
+• They still consume a lot of resources, often come in an email, a Facebook post and may require money.  
+• A hoax about a virus can be as difficult to mitigate as a virus itself. 
+• Good references for hoaxes are www.snopes.com and www.hoax-slayer.net. Also use spam filters.  
+ 
+ 
+Watering Hole Attack. 
+• What if your network is really secure? Well a watering hole attack is a situation where the attackers attack the locations that you regularly visit. 
+• It could include local coffee shops, industry related sites, and they will infect those third-party sites.  
+• Practice defense in depth. Never rely on a single type of security, layer them on top of each other. Have a good firewall, good IPS/IDS. Update AVs.  
+ 
+ 
+Principles of Social Engineering.  
+• Social Engineering is the practice of using social tactics to gain information. It is often low tech.  
+• It can involve one or multiple people, it can happen over the phone or emails, from a friend or associate. It is constantly changing. The principles are: 
+• Authority: The social engineer is trying to gain access and uses some kind of authority. It is most effective with impersonation, vishing and whaling attacks. 
+• Intimidation: They might tell you that some bad things will happen if you don't help (e.g. threaten non payment). Usually combined with urgency.  
+• Consensus/Social Proof: Using other people to try to justify what they're doing. Creating fake testimonials. Effective with trojans and hoaxes.  
+• Scarcity: We have to be able to resolve this issue before the time expires. Effective with phishing and trojans.  
+• Urgency: Encourage people to take action immediately. Effective with ransomware, phishing, vishing, whaling and hoaxes.   
+• Familiarity: Social engineers attempt to build rapport with victims before attacking. Effective with shoulder surfing and tailgating.  
+• Trust: Often used in vishing attacks. 
+ 
+ 
+Denial of Service (DoS) and DDoS.  
+• It is when the attackers attack a service that is normally available and making it unavailable for everybody. They usually do it by using a vulnerability in the system. Sometimes it is just an overwhelming of a service. It can be something as simple as turning of power in a building.  
+• Sometimes DoS is not always malicious. It can be  a lack of bandwidth, a water line break.  
+• DoS attack is from one attacker against one target. 
+• Distributed Denial of Service (DDoS) is a situation where the attack is coming from many different locations at the same time. Can be an army of botnets. Two or more computers against a single target.  
+• Another technique is amplification, where the attacker increases the size of the attack as it approaches its target. A smurf attack will spoof the source IP address (which was sending pings out as a broadcast) to the victim's IP address and be flooded with ICMP replies. 
+• DNS amplification attacks send DNS requests to DNS servers spoofing the IP address of the victim. The attacks tell the DNS servers to send as much data as possible and this can overload the victim's system. 
+ 
+ 
+Man-in-the-middle Attack.  
+• It is a situation where the attacker sits between your computer and another computer during communication. Neither of the devices are aware of this guy.  
+• You don't know that your traffic is being redirected.  
+• The attacker pretends to have the IP address of the recipient computer, and the original traffic is redirected to his computer. An application such as ettercap can be used to perform man-in-the-middle poisoning. 
+• Those who are not in your subnet perform a man-in-the-browser attack and malware/trojan does all of the proxy work. It is easy to proxy encrypted traffic, everything looks normal to the victim. Man-in-the-browser is a proxy trojan horse that infects vulnerable web browsers. 
+• It is a form of active interception or active eavesdropping.  
+• Kerberos helps prevent man-in-the-middle attacks with mutual authentication. It doesn't allow a malicious system in the middle of the conversation. 
+ 
+ 
+Password Attacks. 
+• They attempt to discover or bypass passwords used for authentication on systems and networks for different types of files. 
+• A brute force attack attempts to guess all possible character combinations. The two types of brute force attacks are online and offline. 
+• A dictionary attack uses a dictionary of words and attempts every word in the dictionary to see if it works. It is simply words and character combination. 
+• Most systems don't store the actual password, but store a hash. Hash attacks attack the hash of the password instead of the password. In a pass the hash attack, the attacker discovers the hash of the password and uses it to log on to the system. NTLMv2 or Kerberos can solve that.  
+• Rainbow Table attacks are a type of attack that attempts to discover the password from the hash. A rainbow table is a huge database of precomputed hashes. Salting passwords is a method of preventing this. A salt is a set of random data such as adding two additional characters.  
+ 
+ 
+Buffer Overflows.  
+• It occurs when you're writing information to memory, and it spills over into other memory areas. The bad guys check for openings to gain access.  
+ 
+Data Injection.  
+• Applications should be able to handle input and output. Code injection is adding your own information into a data stream.  
+• There are so many different ways to input into an application (LDAP, SQL, XML, HTML, etc.).  
+• SQL injection is one of the most common ways to access. Another one is XML injection.  
+ 
+ 
+Cross Site Scripting (XSS). 
+• It is a security flaw where information from one site can be shared with another. It takes advantage of the trust a user has for a site.  
+• A non-persistent XSS attack happens when a web site allows scripts to run in user input. For instance, entering a JS code into a search window.  
+• Application developers should perform application checking when writing pages.  
+• Persistent XSS attack happens when the bad guys can store the JS so that later on people can retrieve that message and run that script. Anyone who comes across that page will get that script running on their browser. There is no specific target, all viewers of the page are potential victims. 
+• Always make sure that you know what you are clicking. Always know where that link is taking you. Never blindly click links. Keep browsers updated.  
+• Cross-site request forgery attack (XSRF) takes advantage of the trust that a web browser and a web app have between each other.  
+ 
+ 
+Privilege Escalation.  
+• It happens when a person can gain a higher level access to a system where they're not allowed. They can exploit a vulnerability or it can be a design flaw.  
+• These are high priority vulnerability patches.  
+• Some privilege escalations are horizontal (people at the same hierarchical level).  
+• To mitigate privilege escalation, perform patching, update AVs, perform data execution prevention (only data in executable areas can run).  
+ 
+ 
+DNS Poisoning.  
+• Modifying the DNS server to send them to an address which is not the one where they intended to go. Modify the client host file and send a fake response to a valid DNS request.  
+• Domain hijacking is gaining access to the domain registration where all the traffic information is stored. To gain access, it can be done by brute force, social engineering, gaining access to the email address that manages the account.  
+• Many current DNS servers use Domain Name System Security Extensions (DNSSEC) to protect DNS records and prevent DNS poisoning.  
+• Three attacks against DNS services are DNS poisoning, pharming and DDoS. 
+• DNS pharming attack is one that manipulates the DNS name resolution process. It corrupts either the server or the client. It redirects users to a different website. Pharming attacks on the client computer modify the host file used on Windows system.  
+ 
+ 
+Zero-day Attacks.  
+• Many applications have undiscovered vulnerabilities. Researchers try to find vulnerabilities before the attackers. Attackers want to take advantage of those vulnerabilities before patching.  
+• A zero-day is a vulnerability that is unknown to trusted sources. OS vendors write and release patches once they know about them, but before that nobody knows. Zero-day attacks undocumented vulnerabilities.   
+• Common vulnerabilities are available at www.cve.mitre.org  
+ 
+ 
+Replay Attacks.  
+• Attackers try to gain access to network packets, acquire data that we have transferred previously to use it in future.  
+• Once they have the data, they can perform the same action and look like the user. This can be similar to a man-in-the-middle attack.  
+• Timestamps and sequence numbers are used to counteract this attack.  
+ 
+ 
+Client Hijacking Attacks.  
+• URL hijacking (Typo squatting) is when attackers try to take advantage of certain situations, e.g. selling a badly spelled domain names to original domain name owners. They can also redirect the badly spelled name to competitors. They can also use these as a phishing site.  
+• Clickjacking is when you're clicking on a button on a screen but you're actually clicking on something else. It is an invisible layer on the top. It is a technique that is commonly used on mobile phones. A technique called Cloak & Dagger is used where people commonly put invisible information on the screen. Most clickjacking attacks use HTML frames.  
+• Another form of account hijacking is through cookies (information stored on your computer by the browser). Websites use it for tracking and session management. Cookies hold a lot of personal information.  
+• Session hijacking (Sidejacking) is a technique where someone can gain access to a service without actually authenticating to the service.   
+• To prevent session hijacking, encrypt everything end to end. It puts additional load on the web server (HTTPS). Many sites are moving to HTTPS only.  
+• In a domain hijacking attack, the attacker changes the registration of a domain name without permission from the owner. Attackers do so with social engineering techniques.  
+ 
+ 
+Driver Manipulation.  
+• Traditional AVs are very good at identifying known attacks. However, there are constant zero-day attacks and new attack types.  
+• One great way of putting malware is in the hardware and OS.  
+• Shimming provides the solution that makes it appear that older drivers are compatible. Windows includes it's own shim. Malware writers can write their own shims and pretend to be Window compatibility versions.  
+• Another technique is refactoring (metamorphic malware). Refactoring code is the process of rewriting the internal processing of the code without changing its external behavior. Anytime the person downloads a particular malware, it constantly appears differently. They put loops in the code, pointless code strings, reorder functions, modify the application flow, reorder the code and insert useless data types.  
+• Attackers with strong programming skills use their knowledge by creating shims or rewriting internal code.  
+• Use a layered approach, i.e. use your traditional AVs and block unknown websites.  
+ 
+ 
+Spoofing.  
+• It is when one person/device pretends to be something it's not (e.g. fake web server, fake DNS server, etc.). One common spoofing is email address spoofing. The two common spoofing attacks are MAC address spoofing and IP address spoofing.  
+• There is more and more caller ID spoofing. Incoming call information is completely fake.  
+• Another type of spoofing is man-in-the-middle attack.  
+• MAC spoofing is a situation where the MAC address is changed. Changing the MAC address can be legitimate.  
+• IP address spoofing is taking someone else's IP address and pretending to be someone you're not. It is easier to identify IP address spoofing than MAC.  
+ 
+ 
+SYN Flood Attacks.  
+• STN Flood attack is a common attack used against servers on the internet. Easy for attackers to launch, difficult to stop and can cause problems.  
+• It disrupts the TCP handshake process and can prevent legitimate clients from connecting.  
+• In a SYN flood attack, the attacker never completes the handshake by sending the ACK packet. Instead, he sends a barrage of SYN packets leaving the server with multiple half-open connections.  
+ 
+ 
+ARP Poisoning Attacks. 
+• It is an attack that misleads computers or switches about the actual MAC address of a system. ARP (Address Resolution Protocol) resolves the IP addresses of systems to their MAC addresses and stores the result in an ARP cache.  
+• ARP uses two primary messages: ARP request (who has this IP address?) and ARP reply (the correct computer responds). In many OS, all the computers that hear the ARP reply also cache the MAC address.  
+• A vulnerability with ARP is that it is very trusting and believes any ARP reply packet. Attackers can easily spoof and poison the ARP cache. 
+• Two possible attacks from ARP poisoning are man-in-the-middle and DoS attacks.  
+ 
+ 
+Wireless Replay Attacks.  
+• A 
+ 
+ 
+Rogue Access Points & Evil Twins.  
+• Attackers can plug in a wireless access point or enable wireless sharing in an OS. Schedule periodic surveys to ensure that no wireless AP is present. A rogue AP is an AP placed within a network without official authorization.  
+• Also consider using 802.1X (Network Access Control). It requires authentication for every device on the network.  
+• Another thing is Wireless evil twins. They are configured exactly as an existing network (same SSID and security settings). It can overpower the existing access points. They are very easy to fool in common locations such as hotels and airports.  
+• Make sure that you are always using a secure connection (HTTPS).  
+ 
+ 
+Wireless Jamming.  
+• This is jamming the radio frequencies of a communication for wireless network. The goal is to decrease the signal to noise ratio at the receiving device. 
+• It might be intentional or not (e.g. microwave oven, fluorescent light). 
+• There are many kinds, one can be constant random bits sent, or data sent at random times, reactive jamming (when someone tries to communicate).  
+• Jamming needs to be somewhere close, so find the device that performs the jamming using a directional antenna and an attenuator.  
+ 
+ 
+Wi-Fi Protected Setup (WPS) Attacks. 
+• There are different ways to connect to a WPS network (pins, push button, near field, etc.). However, WPS has a design flaw that was discovered in 2011. The PIN is an 8 digit number, which is in reality a 7 digit and a checksum. It used to take about 4 hours to go through all the possibilities (11000). 
+• If you have access to the access point, the PIN may be written on the device.  
+• A WPS attack keeps trying different PINs until it succeeds. Security experts recommend disabling WPS on all devices.  
+ 
+ 
+Bluejacking and Bluesnarfing.  
+• Bluejacking allowed people to send unsolicited messages to mobile devices over Bluetooth. Bluetooth typical functionality is within 10 meters. Bluejacking can also be done with an address book contact. Bluetooth was updated.  
+• Bluesnarfing is an updated vulnerability in Bluetooth. Refers to unauthorized access to information on a Bluetooth device (emails, text, etc.). 
+• Bluebugging is a more advanced version of bluesnarfing because it installs a backdoor. 
+ 
+ 
+Radio Frequency Identification (RFID) and Near Field Communication (NFC) Attacks.  
+• RFID is used almost everywhere today. In access badges at work, in inventory tracking, in pet identification, etc.  
+• The device is powered externally by sending a radio frequency. RF powers the tag with transmits the ID. Communication is bidirectional.  
+• Attacks on RFID include data capture, replay attacks, spoofing (writing your own data to the tag), DoS (signal jamming) or decryption.  
+• A technology built on RFID is NFC. This is similar to RFID and it is built on proximity (e.g. paying for stuff with phones by putting it close by). Used with Google Wallet, MasterCard, etc.  
+• Attacks on NFC include remote capture, frequency jamming, man-in-the-middle attacks or loss of RFC device control. During an NFC attack, the attacker uses an NFC reader to capture data from another NFC device. One method is eavesdropping. The NFC reader uses an antenna to boost its range and intercept the data transfer.  
+ 
+ 
+Wireless Disassociation Attacks.  
+• It is a significant DoS attack used to remove a wireless client from a wireless network. In a disassociation attack, the attacker sends a disassociation frame to the access point with a spoofed MAC address of the victim.  
+ 
+ 
+IV Attacks. 
+• A wireless initialization vector (IV) attack attempts to discover the pre-shared key from the IV. The IV is a number. Some wireless protocols use an IV by combining it with a pre-shared key to encrypt data in transit. An IV attack is successful when an encryption system reuses the same IV.  
+ 
+ 
+Cryptographic Attacks.  
+• One attack against cryptographic information is Known Plaintext Attack (KPA). This occurs when the attacker has the encrypted information and some of the plaintext. If you have a little bit of the plaintext (called the crib) you can try to determine the rest. Plaintext is human readable data and ciphertext is encrypted data.  
+• Passwords are stored in hashes. It is impossible to reverse a hash. Rainbow tables are optimized pre-built sets of hashes. Rainbow tables won't work with salted hashes, so salt your hashes. These are additional random values added to hashes.  
+• Another attack on passwords is a dictionary attack. Common words used to find passwords.  
+• With a brute force attack, attackers use every combination of letters and numbers to find the password. It is very slow and most accounts will fail after a number of attempts. What attackers do is that they obtain a list of users and hashes, calculate a password hash and compare it to stored hash.  
+• The birthday attack is another type. In the digital world, it is called a hash collision. The same value for two different plaintexts. The attacker will generate multiple versions of plaintexts to match hashes. In hashing, every type of plaintext should be unique.  
+• Weak Implementations in cryptographic attacks include weak encryption (one weak link breaks the chain), 802.11 WEP (the key can be recovered by gathering enough packets) or Data Encryption Standard (DES, only 56 bit keys, can be brute forced easily).  
+• Another cryptographic attack is a Replay Attack. If you use hashing without salting and session ID tracking, it is risky.  
+
+
