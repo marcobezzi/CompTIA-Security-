@@ -251,8 +251,7 @@ ARP Poisoning Attacks. 
  
  
 Wireless Replay Attacks.  
-• A 
- 
+
  
 Rogue Access Points & Evil Twins.  
 • Attackers can plug in a wireless access point or enable wireless sharing in an OS. Schedule periodic surveys to ensure that no wireless AP is present. A rogue AP is an AP placed within a network without official authorization.  
@@ -304,5 +303,16 @@ Cryptographic Attacks.  
 • The birthday attack is another type. In the digital world, it is called a hash collision. The same value for two different plaintexts. The attacker will generate multiple versions of plaintexts to match hashes. In hashing, every type of plaintext should be unique.  
 • Weak Implementations in cryptographic attacks include weak encryption (one weak link breaks the chain), 802.11 WEP (the key can be recovered by gathering enough packets) or Data Encryption Standard (DES, only 56 bit keys, can be brute forced easily).  
 • Another cryptographic attack is a Replay Attack. If you use hashing without salting and session ID tracking, it is risky.  
+
+1.3     THREAT ACTORS. 
+ 
+• Also called malicious actors. They come from everywhere, and mostly use open source intelligence.  
+• One type of actor is a script kiddy. They run pre-made scripts without necessarily knowing what's happening. Can be internal or (usually) external. Scripts are not sophisticated and they don't usually have normal funding. They are just motivated by the hunt and make a name. There isn't an age limit.  
+• A hacktivist (hacker + activist) have a mission. They have a goal, a political agenda, usually external. They are usually sophisticated. Funding is usually limited. 
+• Organized crime are external actors. Group of individuals working together in criminal activities. They are professional criminals, motivated by money, well organized. They have a lot of capital to fund those projects and make more by hacking.  
+• Some threat actors are also Governments. They usually focus on national security, against an external organization. They have the highest sophistication. They work on APT (Advanced Persistent Threat). They spend a lot of time and money to find vulnerabilities.  
+• One type of difficult actor to find is an insider. They have legitimate access to an organization's internal resources. These are more than just passwords on sticky notes. They understand IP addressing schemes, they know where servers are located, they can pinpoint what they're going after, they have extensive resources.  
+• Competitors are also threat actors. They usually have many different motivations (DoS, espionage, harm reputation). They usually have high sophistication and significant funding. Their intents can be steal customer list, financial info, corrupt databases, shut down an event, etc. 
+ 
 
 
